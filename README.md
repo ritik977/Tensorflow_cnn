@@ -10,15 +10,15 @@ It usually involve these steps to build a successful model
 
 Here are the steps used for this project:-
 
-1) Define some parameters for the loader:
+1)  Define some parameters for the loader:
     batch_size = 32
     img_height = 180
     img_width = 180
 
-2) Spliting Dataset
+2)  Spliting Dataset
     We will use 80% of the images for training, and 20% for validation.
 
-3) Visualize the data
+3)  Visualize the data
     we can visualize the data using matplotlib.pyplot library, I have commented out that code and we can uncomment for the same
 
 4) Standardize the data
@@ -29,19 +29,19 @@ Here are the steps used for this project:-
 
     .cache() keeps the images in memory after they're loaded off disk during the first epoch. This will ensure the dataset does not become a bottleneck while training your model. If your dataset is too large to fit into memory, you can also use this method to create a performant on-disk cache.
 
-6) Create the model
+6)  Create the model
     The model consists of three convolution blocks with a max pool layer in each of them. There's a fully connected layer with 128 units on top of it that is activated by a relu activation function
 
-7)Compile the model
+7)  Compile the model
     For this project I have chose  optimizers.Adam optimizer and losses.SparseCategoricalCrossentropy loss function. To view training and validation accuracy for each training epoch, pass the metrics argument.
 
-8)Model summary
+8)  Model summary
     View all the layers of the network using the model's summary method.
 
-9)Train the model
+9)  Train the model
     Using 10 epochs, we will visualise results and see for overfitting and then will take decision accordingly
 
-10)Visualize training results
+10) Visualize training results
     Create plots of loss and accuracy on the training and validation sets. I have commented out that code but we can uncomment for visualizing training results
 
 11) Overfitting
